@@ -10,8 +10,8 @@
 // Import a library to help create a component
 import * as React from 'react';
 // import ReactNative from 'react-native';
-import {Text, Header, AppRegistry } from 'react-native';
-// import Header from './src/components/header'
+import {Text, AppRegistry } from 'react-native';
+import Header from './src/components/header'
 // if you were to do it wholistically
 // import * as ReactNative from 'react-native';
 
@@ -21,20 +21,25 @@ import {Text, Header, AppRegistry } from 'react-native';
  const App = () => {
 
     //optional to put the return and ();
-     return(
+    //  return(
          // if you were to do it wholistically
         //  <ReactNative.Text>Some Text</ReactNative.Text>
         //  <ReactNative.Text>Some Text</ReactNative.Text>
-//         <Header
+        
+ 
+ 
+        return  <Header />
 //   placement="left"
 //   leftComponent={{ icon: 'menu', color: '#fff' }}
 //   centerComponent={{ text: 'MY TITLE', style: { color: '#fff' } }}
 //   rightComponent={{ icon: 'home', color: '#fff' }}
 // />
-        <Text>Some Text</Text>
-     );
+        // <Text>Some Text</Text>
+    //  );
 
  };
+
+
 
 
 
