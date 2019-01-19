@@ -1,0 +1,17 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/jamesngo/ThreeOneOne",
+  "author": "madjn",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "cassandra-driver": "^4.0.0",
+    "express": "^4.16.4",
+    "http": "^0.0.0"
+  },
+	"scripts": {
+		"start": "node src/index.js"
+	}
+}
