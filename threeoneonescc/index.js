@@ -8,48 +8,40 @@
 // //
 
 // Import a library to help create a component
-import * as React from 'react';
+import * as React from "react";
 // import ReactNative from 'react-native';
-import {Text, AppRegistry, View } from 'react-native';
-import Header from './src/components/header'
-import SquareList from './src/components/SquareList';
+import { Text, AppRegistry, View } from "react-native";
+import Header from "./src/components/header";
+import SquareList from "./src/components/SquareList";
 
 // if you were to do it wholistically
 // import * as ReactNative from 'react-native';
 
-
-
 // Create a component
- const App = () => (
+const App = () => (
+  //optional to put the return and ();
+  //  return(
+  // if you were to do it wholistically
+  //  <ReactNative.Text>Some Text</ReactNative.Text>
+  //  <ReactNative.Text>Some Text</ReactNative.Text>
 
-    //optional to put the return and ();
-    //  return(
-         // if you were to do it wholistically
-        //  <ReactNative.Text>Some Text</ReactNative.Text>
-        //  <ReactNative.Text>Some Text</ReactNative.Text>
-
-        //calls for the class for the header text, think
-<View>
- <Header headerText={'Albums'}/>
- <SquareList />
- </View>   
- // return  <Header />
-//   placement="left"
-//   leftComponent={{ icon: 'menu', color: '#fff' }}
-//   centerComponent={{ text: 'MY TITLE', style: { color: '#fff' } }}
-//   rightComponent={{ icon: 'home', color: '#fff' }}
-// />
-        // <Text>Some Text</Text>
-     );
+  //calls for the class for the header text, think
+  <View>
+    <Header headerText={"Albums"} />
+    <SquareList />
+  </View>
+  // return  <Header />
+  //   placement="left"
+  //   leftComponent={{ icon: 'menu', color: '#fff' }}
+  //   centerComponent={{ text: 'MY TITLE', style: { color: '#fff' } }}
+  //   rightComponent={{ icon: 'home', color: '#fff' }}
+  // />
+  // <Text>Some Text</Text>
+);
 
 //  };
-
-
-
-
 
 // Render it to the device.
 // if you were to do it wholistically
 // ReactNative.AppRegistry.registerComponent('albums2',() => App);
-AppRegistry.registerComponent('threeoneonescc',() => App);
-
+AppRegistry.registerComponent("threeoneonescc", () => App);
