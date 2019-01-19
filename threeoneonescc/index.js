@@ -10,8 +10,10 @@
 // Import a library to help create a component
 import * as React from 'react';
 // import ReactNative from 'react-native';
-import {Text, AppRegistry } from 'react-native';
+import {Text, AppRegistry, View } from 'react-native';
 import Header from './src/components/header'
+import SquareList from './src/components/SquareList';
+
 // if you were to do it wholistically
 // import * as ReactNative from 'react-native';
 
@@ -27,8 +29,11 @@ import Header from './src/components/header'
         //  <ReactNative.Text>Some Text</ReactNative.Text>
 
         //calls for the class for the header text, think
+<View>
  <Header headerText={'Albums'}/>
-        // return  <Header />
+ <SquareList />
+ </View>   
+ // return  <Header />
 //   placement="left"
 //   leftComponent={{ icon: 'menu', color: '#fff' }}
 //   centerComponent={{ text: 'MY TITLE', style: { color: '#fff' } }}
