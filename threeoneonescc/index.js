@@ -18,26 +18,26 @@ import Header from './src/components/header'
 
 
 // Create a component
- const App = () => {
+ const App = () => (
 
     //optional to put the return and ();
     //  return(
          // if you were to do it wholistically
         //  <ReactNative.Text>Some Text</ReactNative.Text>
         //  <ReactNative.Text>Some Text</ReactNative.Text>
-        
- 
- 
-        return  <Header />
+
+        //calls for the class for the header text, think
+ <Header headerText={'Albums'}/>
+        // return  <Header />
 //   placement="left"
 //   leftComponent={{ icon: 'menu', color: '#fff' }}
 //   centerComponent={{ text: 'MY TITLE', style: { color: '#fff' } }}
 //   rightComponent={{ icon: 'home', color: '#fff' }}
 // />
         // <Text>Some Text</Text>
-    //  );
+     );
 
- };
+//  };
 
 
 
