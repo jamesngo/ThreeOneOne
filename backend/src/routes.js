@@ -18,3 +18,8 @@ module.exports.recieveTicket = function(client,req,res) {
 
   res.sendStatus(200);
 }
+
+//https://stackoverflow.com/questions/19696240/proper-way-to-return-json-using-node-or-express
+module.export.sendTicket = function(client,req,res){
+
+}
