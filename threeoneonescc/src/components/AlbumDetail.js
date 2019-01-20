@@ -2,6 +2,7 @@ import React from "react";
 import { Text, View, Image } from "react-native";
 import Card from "./Card";
 import CardSection from "./CardSection";
+import Button from "./Button";
 
 const AlbumDetail = ({ album }) => {
   const { title, artist, thumbnail_image } = album;
@@ -38,6 +39,10 @@ const AlbumDetail = ({ album }) => {
                 "https://cdn.planespotters.net/photo/801000/original/11-5038-usaf-united-states-air-force-lockheed-martin-f-35a-lightning-ii_PlanespottersNet_801757_e2ad486047.jpg"
             }}
           />
+      </CardSection>
+
+      <CardSection>
+        <Button />
       </CardSection>
     </Card>
   );

@@ -26,7 +26,7 @@ const App = () => (
   //  <ReactNative.Text>Some Text</ReactNative.Text>
 
   //calls for the class for the header text, think
-  <View>
+<View style={{flex:1}} >
     <Header headerText={"Albums"} />
     <SquareList />
   </View>
