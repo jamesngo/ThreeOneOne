@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { Text, View,Button, Alert, StyleSheet, ScrollView  } from 'react-native';
 import { TextInput } from 'react-native-gesture-handler';
+//import * as request from 'request';
 
 
-class Issues extends Component {
+class IssueCreateScreen extends Component {
 
     constructor(props){
       super(props);
@@ -26,7 +27,17 @@ class Issues extends Component {
         <View style = {styles.button}>
           <Button   
               onPress={() => {
-                Alert.alert('You tapped the button!');
+                // const options = {
+                //   uri: 'http://https://169.233.207.180:8080/createUser',
+                //   method: 'POST',
+                //   json: true,
+                //   body: JSON.stringify({
+                //     "email": "alanBrill@cooll.com",
+                //     "fn": "alan",
+                //     "ln": "brilliant"
+                //   })
+                // }
+                // request.post(options);
               }}
               title="Post Issue"
           />
@@ -75,5 +86,5 @@ const styles = StyleSheet.create({
 
 });
 
-export default Issues;
+export default IssueCreateScreen;
 

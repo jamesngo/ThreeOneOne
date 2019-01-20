@@ -1,6 +1,7 @@
 import {createStackNavigator, createAppContainer} from 'react-navigation';
 import React, { Component } from 'react';
-import { Text , View, Button } from 'react-native';
+import { Text , View, Button, StyleSheet } from 'react-native';
+import NavBar from './navbar'
 
 import IssueScreen from './IssueScreen';
 class HomeScreen extends React.Component {
@@ -15,16 +16,25 @@ class HomeScreen extends React.Component {
     render() {
 
       return (
-          <View>
-                <Button
-                 title="Go to Issues"
-                 onPress={() => this.props.navigation.navigate('Issues')}
-                 />
+          <View >
+            <Text>dfdsfsd</Text>
+            <Text>dfdsfsd</Text>
+            <Text>dfdsfsd</Text>
+            <Text>dfdsfsd</Text>
+            <Text>dfdsfsd</Text>
+            <Text>dfdsfsd</Text>
+            <Text>dfdsfsd</Text>
+            <Text>dfdsfsd</Text>
+            <Text>dfdsfsd</Text>
+            <Text>dfdsfsd</Text>
+            <NavBar navigation={this.props.navigation}/>
           </View>
 
         
       );
     }
   }
+
+  
   
     export default HomeScreen;

@@ -11,11 +11,13 @@
 import * as React from 'react';
 // import ReactNative from 'react-native';
 import {View,Text, AppRegistry } from 'react-native';
-import Issues from './src/components/issue';
+import Issues from './src/components/IssueCreateScreen';
 //import NavBar from './src/components/navbar';
 import IssueScreen from './src/components/IssueScreen';
 import IssueCard from './src/components/IssueCard';
 import HomeScreen from './src/components/HomeScreen';
+import IssueCreateScreen from './src/components/IssueCreateScreen';
+
 import {createStackNavigator, createAppContainer} from 'react-navigation';
 
 
@@ -55,6 +57,7 @@ import {createStackNavigator, createAppContainer} from 'react-navigation';
     {
       Home: HomeScreen,
       Issues: IssueScreen,
+      IssueCreate: IssueCreateScreen
     },
     {
       initialRouteName: 'Home',

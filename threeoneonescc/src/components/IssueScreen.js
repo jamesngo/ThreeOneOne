@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 //import { ScrollView } from 'react-native-gesture-handler';
 import { Text, View,Button, Alert, StyleSheet, ScrollView  } from 'react-native';
 import IssueCard from './IssueCard';
+import NavBar from './navbar'
+
 
 class IssueScreen extends Component {
     constructor(props){
@@ -25,14 +27,18 @@ class IssueScreen extends Component {
             </ScrollView>
             <Button   
               onPress={() => {  
-                this.setState(previousState=> {
-                    previousState.issueList.push({"title": "test", "description":"test","address":"test" });
-                    return previousState
-                });
+                // this.setState(previousState=> {
+                //     previousState.issueList.push({"title": "test", "description":"test","address":"test" });
+                //     return previousState
+                // });
+                this.props.navigation.navigate('IssueCreate')
                // issueList.push(<IssueCard title='test' address='test' description='test'/>);
               }}
               title={"Add Issues"}
             />
+            <NavBar navigation={this.props.navigation}/>
+
+
         </View>
       );
     }
