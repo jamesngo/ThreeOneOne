@@ -13,6 +13,7 @@ import * as React from "react";
 import { Text, AppRegistry, View } from "react-native";
 import Header from "./src/components/header";
 import SquareList from "./src/components/SquareList";
+import HomeView from "./src/components/HomeView";
 
 // if you were to do it wholistically
 // import * as ReactNative from 'react-native';
@@ -27,9 +28,10 @@ const App = () => (
 
   //calls for the class for the header text, think
 <View style={{flex:1}} >
-    <Header headerText={"Albums"} />
+    <Header headerText={"THREE ONE ONE"} />
     <SquareList />
-  </View>
+     <HomeView />
+</View>
   // return  <Header />
   //   placement="left"
   //   leftComponent={{ icon: 'menu', color: '#fff' }}
