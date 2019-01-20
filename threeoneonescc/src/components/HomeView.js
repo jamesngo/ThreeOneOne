@@ -26,10 +26,8 @@ const HomeView = () => {
             <Image
                 style={imageStyle}
                 //header would go here
-                source={{
-                uri:
-                    "././images/logo.jpg"
-                }}
+                source={require('./logo.jpg')
+                }
             />
             </View>
             
@@ -42,15 +40,13 @@ const HomeView = () => {
             <Image
                 style={thumbnailStyle}
                 //header would go here
-                source={{
-                uri:
-                    "https://images.newrepublic.com/4aa3c4e7c6c23682dff17fd422749bcd840a822b.jpeg?w=1200&q=65&dpi=2.625&fm=pjpg&h=496"
-                }}
+                source={require('./BeachClipart.png')
+                }
             />
             </View>
             <View style = {headerContentStyle}>
             <Text style={headerTextStyle}>Beach Conditions</Text>
-            <Text>loser</Text>
+            <Text>Decent!</Text>
             </View>
         </CardSection>
         </Card>
@@ -63,15 +59,13 @@ const HomeView = () => {
             <Image
                 style={thumbnailStyle}
                 //header would go here
-                source={{
-                uri:
-                    "https://images.newrepublic.com/4aa3c4e7c6c23682dff17fd422749bcd840a822b.jpeg?w=1200&q=65&dpi=2.625&fm=pjpg&h=496"
-                }}
+                source={require('./AirQuality.png')
+            }
             />
             </View>
             <View style = {headerContentStyle}>
-            <Text style={headerTextStyle}>Beach Conditions</Text>
-            <Text>mitchell</Text>
+            <Text style={headerTextStyle}>Air Quality</Text>
+            <Text>38.925 Particles - Good Quality</Text>
             </View>
         </CardSection>
         </Card>
@@ -83,15 +77,13 @@ const HomeView = () => {
             <Image
                 style={thumbnailStyle}
                 //header would go here
-                source={{
-                uri:
-                    "https://images.newrepublic.com/4aa3c4e7c6c23682dff17fd422749bcd840a822b.jpeg?w=1200&q=65&dpi=2.625&fm=pjpg&h=496"
-                }}
+                source={require('./School.jpg')
+            }
             />
             </View>
             <View style = {headerContentStyle}>
-            <Text style={headerTextStyle}>Beach Conditions</Text>
-            <Text>james</Text>
+            <Text style={headerTextStyle}>School in Session</Text>
+            <Text>No. Holiday.</Text>
             </View>
         </CardSection>
         </Card>
@@ -103,15 +95,13 @@ const HomeView = () => {
             <Image
                 style={thumbnailStyle}
                 //header would go here
-                source={{
-                uri:
-                    "https://images.newrepublic.com/4aa3c4e7c6c23682dff17fd422749bcd840a822b.jpeg?w=1200&q=65&dpi=2.625&fm=pjpg&h=496"
-                }}
+                source={require('./car.jpg')
+            }
             />
             </View>
             <View style = {headerContentStyle}>
-            <Text style={headerTextStyle}>Beach Conditions</Text>
-            <Text>alan</Text>
+            <Text style={headerTextStyle}>Parking Enforcment</Text>
+            <Text>No enforced today, holiday</Text>
             </View>
         </CardSection>
         </Card>
@@ -138,8 +128,13 @@ const styles = {
       marginRight: 10
     },
     imageStyle: {
+    flexDirection: "column",
+    marginLeft: 100, 
+    justifyContent: "center",
+    alignItems: "center",
+    resizeMode: 'contain',
       height: 200,
-      // flex: 1,
+      flex: 1,
       width: 200
     }
   };
