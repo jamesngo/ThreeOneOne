@@ -10,7 +10,7 @@
 // Import a library to help create a component
 import * as React from "react";
 // import ReactNative from 'react-native';
-import { Text, AppRegistry, View } from "react-native";
+// import { Text, AppRegistry, View } from "react-native";
 import Header from "./src/components/header";
 import SquareList from "./src/components/SquareList";
 import HomeView from "./src/components/HomeView";

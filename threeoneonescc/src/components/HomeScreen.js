@@ -2,6 +2,7 @@ import {createStackNavigator, createAppContainer} from 'react-navigation';
 import React, { Component } from 'react';
 import { Text , View, Button, StyleSheet } from 'react-native';
 import NavBar from './navbar'
+import HomeView from './HomeView';
 
 import IssueScreen from './IssueScreen';
 class HomeScreen extends React.Component {
@@ -17,6 +18,10 @@ class HomeScreen extends React.Component {
 
       return (
           <View >
+            {<HomeView/>
+              /* <Text>dfdsfsd</Text>
+            <Text>dfdsfsd</Text>
+        
             <Text>dfdsfsd</Text>
             <Text>dfdsfsd</Text>
             <Text>dfdsfsd</Text>
@@ -24,9 +29,7 @@ class HomeScreen extends React.Component {
             <Text>dfdsfsd</Text>
             <Text>dfdsfsd</Text>
             <Text>dfdsfsd</Text>
-            <Text>dfdsfsd</Text>
-            <Text>dfdsfsd</Text>
-            <Text>dfdsfsd</Text>
+            <Text>dfdsfsd</Text> */}
             <NavBar navigation={this.props.navigation}/>
           </View>
 
