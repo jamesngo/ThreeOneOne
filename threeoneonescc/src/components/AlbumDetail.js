@@ -5,7 +5,7 @@ import CardSection from "./CardSection";
 import Button from "./Button";
 
 const AlbumDetail = ({ album }) => {
-  const { status, id , description, pictureurls,   } = album;
+  const { status, date , description, pictureurls, id  } = album;
   const {
     thumbnailStyle,
     headerContentStyle,
@@ -14,30 +14,27 @@ const AlbumDetail = ({ album }) => {
     imageStyle
   } = styles;
   return (
-    //   console.log(id)
+    //   console.log(status)
     <Card>
       <CardSection>
         <View>
           <Image
             style={thumbnailStyle}
             //header would go here
-            source={{
-                // need to add images if statements here
-              uri:
-                "https://images.newrepublic.com/4aa3c4e7c6c23682dff17fd422749bcd840a822b.jpeg?w=1200&q=65&dpi=2.625&fm=pjpg&h=496"
-            }}
+            source={require("./tu.png")}
           />
         </View>
         <View style = {headerContentStyle}>
-          <Text style={headerTextStyle}>{status}</Text>
-          <Text>{id}</Text>
+          <Text style={headerTextStyle}>{date}</Text>
+          <Text>Current Status: {status}</Text>
+          <Text>Ticket #: {id}</Text>
         </View>
       </CardSection>
       <CardSection>
           <Image
             style = {imageStyle}
             source={{
-              uri: pictureurls
+              uri: pictureurls[0]
             }}
           />
       </CardSection>

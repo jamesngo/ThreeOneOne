@@ -26,7 +26,7 @@ class SquareList extends Component {
   renderAlbums() {
     console.log(this.state.albums);
     return this.state.albums.map(album =>
-      <AlbumDetail key={album.id} album={album} />
+      <AlbumDetail key={album.date} album={album} />
     );
   }
   

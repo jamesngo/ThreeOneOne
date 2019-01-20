@@ -29,8 +29,8 @@ const App = () => (
   //calls for the class for the header text, think
 <View style={{flex:1}} >
     <Header headerText={"THREE ONE ONE"} />
-    {/* <SquareList /> */}
-     <HomeView />
+    <SquareList />
+     {/* <HomeView /> */}
 </View>
   // return  <Header />
   //   placement="left"
