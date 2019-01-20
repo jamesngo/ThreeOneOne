@@ -5,7 +5,7 @@ const uuid = require('cassandra-driver').types.Uuid;
 module.exports.recieveTicket = function(client,req,res) {
   //recieve a .json file
   var ticket = req.body;
-	ticket["date"] = + Date();
+	ticket["date"] = parseInt(+ new Date());
 	ticket["id"] = uuid.random();
   //console.log('INSERT INTO threeoneone.test JSON \'' + JSON.stringify(ticket) + '\' IF NOT EXISTS;');
   //create row in table
