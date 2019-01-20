@@ -24,7 +24,7 @@ client.connect(function (err) {
     console.log(err);
   }
   app.post("/submitTicket", (req, res) => routes.recieveTicket(client,req,res));
-	app.get("/getTickets/:userId", (req, res) => routes.getTickets(client, req, res));
+	app.get("/getTickets/:userId", (req, res) => routes.getTickets(client, req, res));//broken
   app.get("/returnTable", (req, res) => routes.returnTable(client, req, res));
 	app.post("/createUser", (req, res) => routes.createUser(client, req, res));
 	console.log("opened routes");

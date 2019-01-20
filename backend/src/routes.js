@@ -36,8 +36,14 @@ module.exports.returnTable = function(client,req,res){
 		if(err) {
 			console.log(err);
 		}
-    //console.log(result[rows]);
-    res.send(result["rows"]);
+    //console.log(result["rows"]);
+    var list = [];
+
+    result["rows"].map((data) => {
+      list.push(data['[json]']);
+    });
+    console.log(list);
+    res.send(list);
 	});
 }
 
