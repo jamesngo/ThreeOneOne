@@ -7,7 +7,7 @@ const authProvider = new cassandra.auth.PlainTextAuthProvider('backend', 'passwo
 
 
 
-const client = new cassandra.Client({ contactPoints: ['169.233.207.180'],localDataCenter: 'datacenter1', authProvider: authProvider});
+const client = new cassandra.Client({ contactPoints: ['localhost'],localDataCenter: 'datacenter1', authProvider: authProvider});
 
 app.listen(8080,'169.233.207.180');
 client.connect(function (err) {
