@@ -8,10 +8,10 @@ import {
     Alert,
 } from "react-native";
 
-class LoginScreen extends Component {
+class Button3 extends Component {
 
     _onPressButton() {
-        Alert.alert('You love women!')
+        Alert.alert('You love animals!')
     }
 
     render() {
@@ -19,7 +19,7 @@ class LoginScreen extends Component {
             <View style={StyleSheet.container}>
                 <View style = {styles.bottom}>
                     <Button
-                        title = "Are"
+                        title = "Gay"
                         onPress={this._onPressButton}
                         style={styles.button}
                         color = "#0000ff"
@@ -29,7 +29,7 @@ class LoginScreen extends Component {
         );
     }
 }
-export default LoginScreen
+export default Button3
 
 const styles = StyleSheet.create({
 
@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
         flex: 1,
         position: 'absolute',
         bottom: -580,
-        marginLeft: 95,
+        marginLeft: 190,
         justifyContent: 'flex-end',
         height: 100,
         width: 80
@@ -55,4 +55,4 @@ const styles = StyleSheet.create({
     }
 });
 
-AppRegistry.registerComponent('threeoneonesc', () => LoginScreen);
+AppRegistry.registerComponent('threeoneonesc', () => Button3);

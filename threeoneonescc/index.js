@@ -11,13 +11,16 @@
 import * as React from "react";
 import { Component } from "react";
 // import ReactNative from 'react-native';
-import { Text, AppRegistry, View, StyleSheet } from "react-native";
-import { createStackNavigator } from "react-navigation"
+import { Text, AppRegistry, View, StyleSheet, Button, Alert } from "react-native";
+import { createStackNavigator, createAppContainer } from "react-navigation"
 
 import Header from "./src/components/header";
 import SquareList from "./src/components/SquareList";
 import LoginScreen from "./src/components/LoginScreen";
-import HomeScreen from "./src/components/HomeScreen";
+import Button3 from "./src/components/Button3";
+import Button4 from "./src/components/Button4";
+
+//import HomeScreen from "./src/components/HomeScreen";
 
 // if you were to do it wholistically
 // import * as ReactNative from 'react-native';
@@ -55,9 +58,11 @@ const App = () => (
 
   //calls for the class for the header text, think
   <View>
-    <Header headerText={"Albums"} />
+    <Header headerText={"ThreeOneOneSC"} />
     <HomeScreen/>
     <LoginScreen/>
+    <Button3/>
+    <Button4/>
     {/* <SquareList /> */}
   </View>
   // return  <Header />
@@ -69,11 +74,57 @@ const App = () => (
   // <Text>Some Text</Text>
 );
 
-//  };
+class HomeScreen extends Component {
 
-// Render it to the device.
-// if you were to do it wholistically
-// ReactNative.AppRegistry.registerComponent('albums2',() => App);
+    _onPressButton() {
+        Alert.alert('You love men!');
+        <View>
+            <LoginScreen/>
+        </View>
+    }
+
+    render() {
+        return (
+            <View style={StyleSheet.container}>
+                <Header headerText={"Home"} />
+                <View style = {styles.bottom}>
+                    <Button
+                        title = "You"
+                        onPress={this._onPressButton}
+                        style={styles.button}
+                        color = "#0000ff"
+                    
+                    />
+                </View>
+            </View>
+        );
+    }
+}
+export default HomeScreen
+
+const styles = StyleSheet.create({
+
+    container: {
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
+
+    bottom: {
+        flex: 1,
+        position: 'absolute',
+        bottom: -580,
+        justifyContent: 'flex-end',
+        height: 100,
+        width: 80
+    },
+
+    textStyle: {
+        color: '#fff',
+        fontSize:22
+    }
+});
+
 AppRegistry.registerComponent("threeoneonescc", () => App);
 
 
