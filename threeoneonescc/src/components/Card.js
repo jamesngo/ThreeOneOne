@@ -21,6 +21,7 @@ const styles = {
         borderColor: '#ddd',
         borderBottomWith: 0,
         shadow:  '#000',
+        
         shadowOffset: { width: 0, height: 2},
         shadowOpocaity: 0.1,
         //rounddenessss
@@ -31,6 +32,10 @@ const styles = {
         marginRight:5,
         marginTop: 10
 
+    },
+    textStyle: {
+        //not sur eif this does anything?
+        fontSize: 40
     }
 };
 
