@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Text, View,Button, Alert, StyleSheet, ScrollView  } from 'react-native';
 import { TextInput } from 'react-native-gesture-handler';
+// import axios from 'axios';
 //import * as request from 'request';
 
 
@@ -27,15 +28,34 @@ class IssueCreateScreen extends Component {
         <View style = {styles.button}>
           <Button   
               onPress={() => {
+                const axios = require('axios')
+
+                var headers = {
+                  'Content-Type': 'application/json'
+               }
+
+                axios.post('http://https://169.233.207.180:8080/createUser', {
+                    "email": "alanBrill@cooll.com",
+                    "fn": "alan",
+                    "ln": "brilliant"
+                  }, {headers: headers})
+                .then((res) => {
+                  console.log(`statusCode: ${res.statusCode}`)
+                  console.log(res)
+                })
+                .catch((error) => {
+                  console.error(error)
+                })
+
                 // const options = {
                 //   uri: 'http://https://169.233.207.180:8080/createUser',
                 //   method: 'POST',
                 //   json: true,
-                //   body: JSON.stringify({
-                //     "email": "alanBrill@cooll.com",
-                //     "fn": "alan",
-                //     "ln": "brilliant"
-                //   })
+                  // body: JSON.stringify({
+                  //   "email": "alanBrill@cooll.com",
+                  //   "fn": "alan",
+                  //   "ln": "brilliant"
+                  // })
                 // }
                 // request.post(options);
               }}
