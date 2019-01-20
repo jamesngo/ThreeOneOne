@@ -5,12 +5,16 @@ import CardSection from './CardSection';
 
 const AlbumDetail = ({album}) => {
     const{title, artist, thumbnail_image} = album;
+    const {thumbnailStyle, headerContentStyle } = styles;
        return(
 
             <Card>
                 <CardSection>
                 <View>
-                    <Image source={{uri: thumbnail_image}}/>
+                    <Image 
+                    style = {thumbnailStyle}
+                    //header would go here
+                    source={{uri: "https://images.newrepublic.com/4aa3c4e7c6c23682dff17fd422749bcd840a822b.jpeg?w=1200&q=65&dpi=2.625&fm=pjpg&h=496"}}/>
                 </View>
                 <View>
                 <Text>{title}</Text>
@@ -26,6 +30,10 @@ const styles = {
     headerContentStyle:{
         flexDirection: 'column',
         justifyContent:'space-around'
+    },
+    thumbnailStyle:{
+        height: 50,
+        width: 50
     }
 };
 
