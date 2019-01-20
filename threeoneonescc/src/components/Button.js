@@ -11,10 +11,10 @@ const Button = () => {
     
 };
 
-const style = {
-    flex: 1,
-    
-}
+// const style = {
+//     flex: 1,
+//     align
+// }
 
 
 

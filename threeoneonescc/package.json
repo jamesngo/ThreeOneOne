@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "json-parser": "^1.1.5",
     "react": "16.6.3",
     "react-native": "0.57.8",
     "react-navigation": "^3.0.9"
