@@ -8,3 +8,5 @@ was developed for CruzHacks 2019 given the time constraints of about 72 hours to
 311 is a public service app for residents for the city of Santa Cruz, California to submit
 tickets that address issues in Santa Cruz. The list of issues can be found in 
 Issues.md (wip). 
+
+# CRUZHACKS 2019
